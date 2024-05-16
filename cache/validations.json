@@ -1,0 +1,1081 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "OwnableUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:21",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Initializable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:56",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC20Upgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:35",
+        "inherit": [
+          "IERC20Errors",
+          "IERC20Metadata",
+          "IERC20",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC20BurnableUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\extensions\\ERC20BurnableUpgradeable.sol:15",
+        "inherit": [
+          "ERC20Upgradeable",
+          "IERC20Errors",
+          "IERC20Metadata",
+          "IERC20",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "burn(uint256)",
+          "burnFrom(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC20FlashMintUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\extensions\\ERC20FlashMintUpgradeable.sol:22",
+        "inherit": [
+          "IERC3156FlashLender",
+          "ERC20Upgradeable",
+          "IERC20Errors",
+          "IERC20Metadata",
+          "IERC20",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "maxFlashLoan(address)",
+          "flashFee(address,uint256)",
+          "flashLoan(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC20PausableUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\extensions\\ERC20PausableUpgradeable.sol:23",
+        "inherit": [
+          "PausableUpgradeable",
+          "ERC20Upgradeable",
+          "IERC20Errors",
+          "IERC20Metadata",
+          "IERC20",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC20PermitUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\extensions\\ERC20PermitUpgradeable.sol:21",
+        "inherit": [
+          "NoncesUpgradeable",
+          "EIP712Upgradeable",
+          "IERC5267",
+          "IERC20Permit",
+          "ERC20Upgradeable",
+          "IERC20Errors",
+          "IERC20Metadata",
+          "IERC20",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "ECDSA"
+        ],
+        "methods": [
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          "nonces(address)",
+          "DOMAIN_SEPARATOR()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ContextUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:17",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "NoncesUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\NoncesUpgradeable.sol:9",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "nonces(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "PausableUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\PausableUpgradeable.sol:18",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "paused()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "EIP712Upgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\cryptography\\EIP712Upgradeable.sol:32",
+        "inherit": [
+          "IERC5267",
+          "Initializable"
+        ],
+        "libraries": [
+          "MessageHashUtils"
+        ],
+        "methods": [
+          "eip712Domain()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC3156FlashBorrower": {
+        "src": "@openzeppelin\\contracts\\interfaces\\IERC3156FlashBorrower.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "onFlashLoan(address,address,uint256,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC3156FlashLender": {
+        "src": "@openzeppelin\\contracts\\interfaces\\IERC3156FlashLender.sol:12",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "maxFlashLoan(address)",
+          "flashFee(address,uint256)",
+          "flashLoan(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC5267": {
+        "src": "@openzeppelin\\contracts\\interfaces\\IERC5267.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "eip712Domain()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC1155Errors": {
+        "src": "@openzeppelin\\contracts\\interfaces\\draft-IERC6093.sol:113",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC20Errors": {
+        "src": "@openzeppelin\\contracts\\interfaces\\draft-IERC6093.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC721Errors": {
+        "src": "@openzeppelin\\contracts\\interfaces\\draft-IERC6093.sol:55",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC20": {
+        "src": "@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC20Metadata": {
+        "src": "@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol:11",
+        "inherit": [
+          "IERC20"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC20Permit": {
+        "src": "@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Permit.sol:42",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          "nonces(address)",
+          "DOMAIN_SEPARATOR()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Strings": {
+        "src": "@openzeppelin\\contracts\\utils\\Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "Math",
+          "SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ECDSA": {
+        "src": "@openzeppelin\\contracts\\utils\\cryptography\\ECDSA.sol:12",
+        "version": {
+          "withMetadata": "f5d1d59f317f3f9222b1352b3fda820fbaa9339cf5d5e16db2912044fb80d3cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "MessageHashUtils": {
+        "src": "@openzeppelin\\contracts\\utils\\cryptography\\MessageHashUtils.sol:15",
+        "version": {
+          "withMetadata": "7e142636d324398c4abb0a9aed4db3bfefbf0986a0d0d6b0c835779bf85a8e3d",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Math": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SignedMath": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "MoCoKoV1": {
+        "src": "contracts\\MoCoKoV1.sol:13",
+        "version": {
+          "withMetadata": "1d122eac583c05cefd1ab01c2988aad370161e2a0e59185bcfa51836e9316dfa",
+          "withoutMetadata": "4f0ae753c0894f6a8c9510d52f4935807393db683101e7d3f33dc541d4db3547",
+          "linkedWithoutMetadata": "4f0ae753c0894f6a8c9510d52f4935807393db683101e7d3f33dc541d4db3547"
+        },
+        "inherit": [
+          "ERC20FlashMintUpgradeable",
+          "IERC3156FlashLender",
+          "ERC20PermitUpgradeable",
+          "NoncesUpgradeable",
+          "EIP712Upgradeable",
+          "IERC5267",
+          "IERC20Permit",
+          "OwnableUpgradeable",
+          "ERC20PausableUpgradeable",
+          "PausableUpgradeable",
+          "ERC20BurnableUpgradeable",
+          "ERC20Upgradeable",
+          "IERC20Errors",
+          "IERC20Metadata",
+          "IERC20",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "initialize(address)",
+          "pause()",
+          "unpause()",
+          "mint(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "OwnableUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:21",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Initializable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:56",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC20Upgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol:35",
+        "inherit": [
+          "IERC20Errors",
+          "IERC20Metadata",
+          "IERC20",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC20BurnableUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\extensions\\ERC20BurnableUpgradeable.sol:15",
+        "inherit": [
+          "ERC20Upgradeable",
+          "IERC20Errors",
+          "IERC20Metadata",
+          "IERC20",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "burn(uint256)",
+          "burnFrom(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC20FlashMintUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\extensions\\ERC20FlashMintUpgradeable.sol:22",
+        "inherit": [
+          "IERC3156FlashLender",
+          "ERC20Upgradeable",
+          "IERC20Errors",
+          "IERC20Metadata",
+          "IERC20",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "maxFlashLoan(address)",
+          "flashFee(address,uint256)",
+          "flashLoan(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC20PausableUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\extensions\\ERC20PausableUpgradeable.sol:23",
+        "inherit": [
+          "PausableUpgradeable",
+          "ERC20Upgradeable",
+          "IERC20Errors",
+          "IERC20Metadata",
+          "IERC20",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ERC20PermitUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\token\\ERC20\\extensions\\ERC20PermitUpgradeable.sol:21",
+        "inherit": [
+          "NoncesUpgradeable",
+          "EIP712Upgradeable",
+          "IERC5267",
+          "IERC20Permit",
+          "ERC20Upgradeable",
+          "IERC20Errors",
+          "IERC20Metadata",
+          "IERC20",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "ECDSA"
+        ],
+        "methods": [
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          "nonces(address)",
+          "DOMAIN_SEPARATOR()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ContextUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:17",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "NoncesUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\NoncesUpgradeable.sol:9",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "nonces(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "PausableUpgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\PausableUpgradeable.sol:18",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "paused()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "EIP712Upgradeable": {
+        "src": "@openzeppelin\\contracts-upgradeable\\utils\\cryptography\\EIP712Upgradeable.sol:32",
+        "inherit": [
+          "IERC5267",
+          "Initializable"
+        ],
+        "libraries": [
+          "MessageHashUtils"
+        ],
+        "methods": [
+          "eip712Domain()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC3156FlashBorrower": {
+        "src": "@openzeppelin\\contracts\\interfaces\\IERC3156FlashBorrower.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "onFlashLoan(address,address,uint256,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC3156FlashLender": {
+        "src": "@openzeppelin\\contracts\\interfaces\\IERC3156FlashLender.sol:12",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "maxFlashLoan(address)",
+          "flashFee(address,uint256)",
+          "flashLoan(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC5267": {
+        "src": "@openzeppelin\\contracts\\interfaces\\IERC5267.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "eip712Domain()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC1155Errors": {
+        "src": "@openzeppelin\\contracts\\interfaces\\draft-IERC6093.sol:113",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC20Errors": {
+        "src": "@openzeppelin\\contracts\\interfaces\\draft-IERC6093.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC721Errors": {
+        "src": "@openzeppelin\\contracts\\interfaces\\draft-IERC6093.sol:55",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC20": {
+        "src": "@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC20Metadata": {
+        "src": "@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol:11",
+        "inherit": [
+          "IERC20"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IERC20Permit": {
+        "src": "@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Permit.sol:42",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          "nonces(address)",
+          "DOMAIN_SEPARATOR()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Strings": {
+        "src": "@openzeppelin\\contracts\\utils\\Strings.sol:12",
+        "version": {
+          "withMetadata": "0295399b6fe74cb39b37d92231e822234d387d5a3838d388142f4d4122e561cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "Math",
+          "SignedMath"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "ECDSA": {
+        "src": "@openzeppelin\\contracts\\utils\\cryptography\\ECDSA.sol:12",
+        "version": {
+          "withMetadata": "f5d1d59f317f3f9222b1352b3fda820fbaa9339cf5d5e16db2912044fb80d3cc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "MessageHashUtils": {
+        "src": "@openzeppelin\\contracts\\utils\\cryptography\\MessageHashUtils.sol:15",
+        "version": {
+          "withMetadata": "7e142636d324398c4abb0a9aed4db3bfefbf0986a0d0d6b0c835779bf85a8e3d",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "Strings"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Math": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\Math.sol:9",
+        "version": {
+          "withMetadata": "b05d9b4a3e3bc7cb099556192502a5c57829d3c5d63540d5512976ad30e4d8e0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "SignedMath": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\SignedMath.sol:9",
+        "version": {
+          "withMetadata": "f8684548b5303ddcf07cbe655b693fc7923674fb19cfc41d64887af6b6189cc8",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "MoCoKoV1": {
+        "src": "contracts\\MoCoKoV1.sol:13",
+        "version": {
+          "withMetadata": "1d122eac583c05cefd1ab01c2988aad370161e2a0e59185bcfa51836e9316dfa",
+          "withoutMetadata": "4f0ae753c0894f6a8c9510d52f4935807393db683101e7d3f33dc541d4db3547",
+          "linkedWithoutMetadata": "4f0ae753c0894f6a8c9510d52f4935807393db683101e7d3f33dc541d4db3547"
+        },
+        "inherit": [
+          "ERC20FlashMintUpgradeable",
+          "IERC3156FlashLender",
+          "ERC20PermitUpgradeable",
+          "NoncesUpgradeable",
+          "EIP712Upgradeable",
+          "IERC5267",
+          "IERC20Permit",
+          "OwnableUpgradeable",
+          "ERC20PausableUpgradeable",
+          "PausableUpgradeable",
+          "ERC20BurnableUpgradeable",
+          "ERC20Upgradeable",
+          "IERC20Errors",
+          "IERC20Metadata",
+          "IERC20",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "initialize(address)",
+          "pause()",
+          "unpause()",
+          "mint(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    }
+  ]
+}
